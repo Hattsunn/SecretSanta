@@ -10,7 +10,4 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var FolderView: UIImageView!
-    
-    
 }

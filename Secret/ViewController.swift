@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
+    @IBOutlet var folderCollectionView: UICollectionView!
+
     
    private let photos = ["photo0", "photo1", "photo2", "photo3", "photo4", "photo5","photo0", "photo1", "photo2", "photo3", "photo4", "photo5"]
    private let userImages = ["userImage0", "userImage1", "userImage2", "userImage3", "userImage4", "userImage5","userImage0", "userImage1", "userImage2", "userImage3", "userImage4", "userImage5"]
@@ -25,7 +28,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     //１つのセクションの中に表示するセルの数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count
+        return 2
     }
     //セルに表示する内容
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -58,6 +61,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return sectionInsets
+
     }
     
     // セルの行間の設定

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E3BE6EF24791CED00A13D09 /* プレゼント１.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E3BE6EE24791CED00A13D09 /* プレゼント１.PNG */; };
 		6E50B0E7246FE97A00D133D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B0E6246FE97A00D133D9 /* AppDelegate.swift */; };
 		6E50B0E9246FE97A00D133D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B0E8246FE97A00D133D9 /* SceneDelegate.swift */; };
 		6E50B0EB246FE97A00D133D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B0EA246FE97A00D133D9 /* ViewController.swift */; };
@@ -19,6 +20,8 @@
 		6E5D34DF2472B8A400F30C27 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34DE2472B8A400F30C27 /* addViewController.swift */; };
 		6E5D34E324740B9E00F30C27 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E224740B9E00F30C27 /* WordTableViewCell.swift */; };
 		6E5D34E524740C0200F30C27 /* wordlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */; };
+		6EEDAEB12479F791009FAD21 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDAEB02479F791009FAD21 /* CollectionViewCell.swift */; };
+		6EEDAEB52479FD13009FAD21 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDAEB42479FD13009FAD21 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E3BE6EE24791CED00A13D09 /* プレゼント１.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "プレゼント１.PNG"; sourceTree = "<group>"; };
 		6E50B0E3246FE97A00D133D9 /* SecretSanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E50B0E6246FE97A00D133D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E50B0E8246FE97A00D133D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 		6E5D34DE2472B8A400F30C27 /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 		6E5D34E224740B9E00F30C27 /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
 		6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordlistTableViewController.swift; sourceTree = "<group>"; };
+		6EEDAEB02479F791009FAD21 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		6EEDAEB42479FD13009FAD21 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +120,11 @@
 				6E50B0EC246FE97A00D133D9 /* Main.storyboard */,
 				6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */,
 				6E5D34E224740B9E00F30C27 /* WordTableViewCell.swift */,
+				6EEDAEB42479FD13009FAD21 /* CollectionViewController.swift */,
+				6EEDAEB02479F791009FAD21 /* CollectionViewCell.swift */,
+				6E3BE6EE24791CED00A13D09 /* プレゼント１.PNG */,
 				6E50B0EF246FE97E00D133D9 /* Assets.xcassets */,
+				6EE503812478CF3900839D6E /* AppIcon.appiconset */,
 				6E50B0F1246FE97E00D133D9 /* LaunchScreen.storyboard */,
 				6E5D34DC2472B6E500F30C27 /* coffee.jpg */,
 				6E50B0F4246FE97F00D133D9 /* Info.plist */,
@@ -138,6 +148,13 @@
 				6E50B10A246FE97F00D133D9 /* Info.plist */,
 			);
 			path = SecretUITests;
+			sourceTree = "<group>";
+		};
+		6EE503812478CF3900839D6E /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppIcon.appiconset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E50B0F3246FE97E00D133D9 /* LaunchScreen.storyboard in Resources */,
+				6E3BE6EF24791CED00A13D09 /* プレゼント１.PNG in Resources */,
 				6E5D34DD2472B6E500F30C27 /* coffee.jpg in Resources */,
 				6E50B0F0246FE97E00D133D9 /* Assets.xcassets in Resources */,
 				6E50B0EE246FE97A00D133D9 /* Main.storyboard in Resources */,
@@ -275,6 +293,8 @@
 				6E50B0EB246FE97A00D133D9 /* ViewController.swift in Sources */,
 				6E5D34E524740C0200F30C27 /* wordlistTableViewController.swift in Sources */,
 				6E5D34E324740B9E00F30C27 /* WordTableViewCell.swift in Sources */,
+				6EEDAEB12479F791009FAD21 /* CollectionViewCell.swift in Sources */,
+				6EEDAEB52479FD13009FAD21 /* CollectionViewController.swift in Sources */,
 				6E50B0E7246FE97A00D133D9 /* AppDelegate.swift in Sources */,
 				6E5D34DF2472B8A400F30C27 /* addViewController.swift in Sources */,
 				6E50B0E9246FE97A00D133D9 /* SceneDelegate.swift in Sources */,
@@ -450,8 +470,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64SV6F522Y;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.5;
+				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = Secret/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +481,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.SecretSanta;
 				PRODUCT_NAME = SecretSanta;
+				PROVISIONING_PROFILE_SPECIFIER = "L12HatsuneOkada-Distribution";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,8 +491,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64SV6F522Y;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.5;
+				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = Secret/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,6 +502,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.SecretSanta;
 				PRODUCT_NAME = SecretSanta;
+				PROVISIONING_PROFILE_SPECIFIER = "L12HatsuneOkada-Distribution";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

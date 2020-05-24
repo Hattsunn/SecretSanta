@@ -34,7 +34,7 @@ class addViewController: UIViewController {
        wordArray.append(wordDictionary)
        saveData.set(wordArray, forKey: "WORD")
        
-       let alert = UIAlertController(title: "保存完了", message: "単語の登録が完了しました", preferredStyle: .alert)
+       let alert = UIAlertController(title: "保存完了", message: "欲しいものの登録が完了しました", preferredStyle: .alert)
        alert.addAction(UIAlertAction(
            title: "OK", style: .default, handler: nil))
        

@@ -13,7 +13,8 @@ class WordTableViewCell: UITableViewCell {
     @IBOutlet var NameLabel: UILabel!
     @IBOutlet var PriceLabel: UILabel!
     @IBOutlet var MemoLabel: UILabel!
-
+    @IBOutlet var photoImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,11 +9,12 @@
 import UIKit
 var addpage = [String]()
 
-class addViewController: UIViewController {
+class addViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet var NameTextField: UITextField!
     @IBOutlet var PriceTextField: UITextField!
     @IBOutlet var MemoTextField: UITextField!
+    @IBOutlet var photoImage: UIImageView!
     
     var wordArray: [Dictionary<String, String>] = []
        
@@ -27,7 +28,28 @@ class addViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onTappedCameraButton(){
+        presentPickerController(sourceType: .camera)
+    }
+    
+    @IBAction func onTappedAlbumButton(){
+        presentPickerController(sourceType: .photoLibrary)
+    }
+    //カメラ、アルバムの呼び出しメゾッド
+    func presentPickerController(sourceType: UIImagePickerController.SourceType){
+        if UIImagePickerController.isSourceTypeAvailable(sourceType){
+            let picker = UIImagePickerController()
+            picker.sourceType = sourceType
+            picker.delegate = self
+            self.present(picker,animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        self.dismiss(animated: true, completion: nil)
+        photoImage.image = info[.originalImage] as? UIImage
+    }
+    
    @IBAction func saveWord() {
        let wordDictionary = ["Name": NameTextField.text!, "Price": PriceTextField.text!, "Memo": MemoTextField.text!]
        

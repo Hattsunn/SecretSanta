@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     @IBOutlet var collectionView: UICollectionView!
-
     
    override func viewDidLoad() {
           super.viewDidLoad()
@@ -21,15 +20,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
           let layout = UICollectionViewFlowLayout()
           layout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
           collectionView.collectionViewLayout = layout
-      }
+    
+    }
       
       func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-          return 18
+          return 10
       }
       
       func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-          cell.backgroundColor = .red
+          cell.backgroundColor = .cyan
           return cell
       }
       
@@ -39,6 +39,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
           let cellSize : CGFloat = self.view.bounds.width / 2 - horizontalSpace
           return CGSize(width: cellSize, height: cellSize)
       }
+
+    //セルが押されたときに呼ばれるメゾッド
+    private func collectionView(_ collectionView: UICollectionView, didSelectRowAt indexPath: IndexPath) {
+        print("\(collectionViewArray[indexPath.row])が選ばれました！")
+    }
+    
 
       /*
       // MARK: - Navigation

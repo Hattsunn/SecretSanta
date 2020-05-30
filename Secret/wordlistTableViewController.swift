@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 class wordlistTableViewController: UITableViewController {
 
-    var wordArray: [Dictionary<String, String>] = []
-    
-    let saveData = UserDefaults.standard
+    let realm = try! Realm()
+    let add = try!Realm().objects(Add.self).sorted(byKeyPath: "name")
+    var notificationToken: NotificationToken?
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +27,6 @@ class wordlistTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        if saveData.array(forKey: "WORD") != nil {
-            wordArray = saveData.array(forKey: "WORD") as! [Dictionary<String, String>]
-        }
-        tableView.reloadData()
-    }
 
     // MARK: - Table view data source
 
@@ -42,20 +37,18 @@ class wordlistTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return wordArray.count
+        return add.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WordTableViewCell
-        
-        let nowIndexPathDictionary = wordArray[indexPath.row]
-        
-        cell.NameLabel.text = nowIndexPathDictionary["Name"]
-        cell.PriceLabel.text = nowIndexPathDictionary["Price"]
-        cell.MemoLabel.text = nowIndexPathDictionary["Memo"]
-        
-        return cell
-    }
+       let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! WordTableViewCell
+       
+       cell.nameLabel.text = add[indexPath.row].name
+       cell.memoLabel.text = add[indexPath.row].memo
+       cell.priceLabel.text = String(add[indexPath.row].price)
+    
+       return cell
+   }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

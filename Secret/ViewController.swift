@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     @IBOutlet var collectionView: UICollectionView!
-    
+
    override func viewDidLoad() {
           super.viewDidLoad()
           // Do any additional setup after loading the view.
@@ -40,11 +40,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
           return CGSize(width: cellSize, height: cellSize)
       }
 
-    //セルが押されたときに呼ばれるメゾッド
-    private func collectionView(_ collectionView: UICollectionView, didSelectRowAt indexPath: IndexPath) {
-        print("\(collectionViewArray[indexPath.row])が選ばれました！")
-    }
-    
 
       /*
       // MARK: - Navigation

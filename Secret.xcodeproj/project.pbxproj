@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,10 +20,9 @@
 		6E5D34DF2472B8A400F30C27 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34DE2472B8A400F30C27 /* addViewController.swift */; };
 		6E5D34E324740B9E00F30C27 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E224740B9E00F30C27 /* WordTableViewCell.swift */; };
 		6E5D34E524740C0200F30C27 /* wordlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */; };
-		6EEDAF45247E3F35009FAD21 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDAF44247E3F35009FAD21 /* ListCollectionViewCell.swift */; };
-		E1F5235A78B8866D66CAEBD4 /* Pods_SecretTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E72930FD7BC47CB7051A49 /* Pods_SecretTests.framework */; };
-		E3AC4A164F69728A334F89ED /* Pods_Secret.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA699422194B96EC52ACD894 /* Pods_Secret.framework */; };
-		ECF6AC5BA6A1BFABA79C3899 /* Pods_Secret_SecretUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBBB3DF480CE1B9E7FCC8EC /* Pods_Secret_SecretUITests.framework */; };
+		6EEDAF532481FD1A009FAD21 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 6EEDAF522481FD1A009FAD21 /* Realm */; };
+		6EEDAF552481FD1A009FAD21 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6EEDAF542481FD1A009FAD21 /* RealmSwift */; };
+		6EEDAF5C24822CF8009FAD21 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDAF5B24822CF7009FAD21 /* Add.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11598AEA8F4CFB82478F88C7 /* Pods-Secret.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Secret.release.xcconfig"; path = "Target Support Files/Pods-Secret/Pods-Secret.release.xcconfig"; sourceTree = "<group>"; };
-		13E72930FD7BC47CB7051A49 /* Pods_SecretTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecretTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E7EBFA2018236E39778D8A6 /* Pods-Secret.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Secret.debug.xcconfig"; path = "Target Support Files/Pods-Secret/Pods-Secret.debug.xcconfig"; sourceTree = "<group>"; };
-		2D4E15D54CCEE790DECFF632 /* Pods-SecretTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretTests.release.xcconfig"; path = "Target Support Files/Pods-SecretTests/Pods-SecretTests.release.xcconfig"; sourceTree = "<group>"; };
-		3DBBB3DF480CE1B9E7FCC8EC /* Pods_Secret_SecretUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Secret_SecretUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BE6EE24791CED00A13D09 /* プレゼント１.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "プレゼント１.PNG"; sourceTree = "<group>"; };
 		6E50B0E3246FE97A00D133D9 /* SecretSanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E50B0E6246FE97A00D133D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,11 +62,7 @@
 		6E5D34DE2472B8A400F30C27 /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 		6E5D34E224740B9E00F30C27 /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
 		6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordlistTableViewController.swift; sourceTree = "<group>"; };
-		6EEDAF44247E3F35009FAD21 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
-		900F013675A731DD3A396C77 /* Pods-Secret-SecretUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Secret-SecretUITests.release.xcconfig"; path = "Target Support Files/Pods-Secret-SecretUITests/Pods-Secret-SecretUITests.release.xcconfig"; sourceTree = "<group>"; };
-		AA699422194B96EC52ACD894 /* Pods_Secret.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Secret.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9522144D6FB7F44A9B9490F /* Pods-Secret-SecretUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Secret-SecretUITests.debug.xcconfig"; path = "Target Support Files/Pods-Secret-SecretUITests/Pods-Secret-SecretUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DD60DA04820F85FCF89F967C /* Pods-SecretTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretTests.debug.xcconfig"; path = "Target Support Files/Pods-SecretTests/Pods-SecretTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EEDAF5B24822CF7009FAD21 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3AC4A164F69728A334F89ED /* Pods_Secret.framework in Frameworks */,
+				6EEDAF552481FD1A009FAD21 /* RealmSwift in Frameworks */,
+				6EEDAF532481FD1A009FAD21 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F5235A78B8866D66CAEBD4 /* Pods_SecretTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,23 +86,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF6AC5BA6A1BFABA79C3899 /* Pods_Secret_SecretUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		51B4BC69AA6BAC0637DEDC39 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AA699422194B96EC52ACD894 /* Pods_Secret.framework */,
-				3DBBB3DF480CE1B9E7FCC8EC /* Pods_Secret_SecretUITests.framework */,
-				13E72930FD7BC47CB7051A49 /* Pods_SecretTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6E50B0DA246FE97A00D133D9 = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +99,6 @@
 				6E50B0FC246FE97F00D133D9 /* SecretTests */,
 				6E50B107246FE97F00D133D9 /* SecretUITests */,
 				6E50B0E4246FE97A00D133D9 /* Products */,
-				A56AB66BB5A5E63EE85C279E /* Pods */,
-				51B4BC69AA6BAC0637DEDC39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,11 +118,11 @@
 				6E50B0E6246FE97A00D133D9 /* AppDelegate.swift */,
 				6E50B0E8246FE97A00D133D9 /* SceneDelegate.swift */,
 				6E50B0EA246FE97A00D133D9 /* ViewController.swift */,
-				6EEDAF44247E3F35009FAD21 /* ListCollectionViewCell.swift */,
-				6E5D34DE2472B8A400F30C27 /* addViewController.swift */,
-				6E50B0EC246FE97A00D133D9 /* Main.storyboard */,
 				6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */,
 				6E5D34E224740B9E00F30C27 /* WordTableViewCell.swift */,
+				6E5D34DE2472B8A400F30C27 /* addViewController.swift */,
+				6EEDAF5B24822CF7009FAD21 /* Add.swift */,
+				6E50B0EC246FE97A00D133D9 /* Main.storyboard */,
 				6E3BE6EE24791CED00A13D09 /* プレゼント１.PNG */,
 				6E50B0EF246FE97E00D133D9 /* Assets.xcassets */,
 				6EE503812478CF3900839D6E /* AppIcon.appiconset */,
@@ -181,20 +158,6 @@
 			path = AppIcon.appiconset;
 			sourceTree = "<group>";
 		};
-		A56AB66BB5A5E63EE85C279E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1E7EBFA2018236E39778D8A6 /* Pods-Secret.debug.xcconfig */,
-				11598AEA8F4CFB82478F88C7 /* Pods-Secret.release.xcconfig */,
-				C9522144D6FB7F44A9B9490F /* Pods-Secret-SecretUITests.debug.xcconfig */,
-				900F013675A731DD3A396C77 /* Pods-Secret-SecretUITests.release.xcconfig */,
-				DD60DA04820F85FCF89F967C /* Pods-SecretTests.debug.xcconfig */,
-				2D4E15D54CCEE790DECFF632 /* Pods-SecretTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,7 +165,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E50B10D246FE97F00D133D9 /* Build configuration list for PBXNativeTarget "Secret" */;
 			buildPhases = (
-				C03CD19DF483BAC4F6782D04 /* [CP] Check Pods Manifest.lock */,
 				6E50B0DF246FE97A00D133D9 /* Sources */,
 				6E50B0E0246FE97A00D133D9 /* Frameworks */,
 				6E50B0E1246FE97A00D133D9 /* Resources */,
@@ -212,6 +174,10 @@
 			dependencies = (
 			);
 			name = Secret;
+			packageProductDependencies = (
+				6EEDAF522481FD1A009FAD21 /* Realm */,
+				6EEDAF542481FD1A009FAD21 /* RealmSwift */,
+			);
 			productName = Secret;
 			productReference = 6E50B0E3246FE97A00D133D9 /* SecretSanta.app */;
 			productType = "com.apple.product-type.application";
@@ -286,6 +252,9 @@
 				Base,
 			);
 			mainGroup = 6E50B0DA246FE97A00D133D9;
+			packageReferences = (
+				6EEDAF512481FD1A009FAD21 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 6E50B0E4246FE97A00D133D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -327,28 +296,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C03CD19DF483BAC4F6782D04 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Secret-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D79288B769B2ECFFE22D5E8C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,12 +348,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E50B0EB246FE97A00D133D9 /* ViewController.swift in Sources */,
-				6EEDAF45247E3F35009FAD21 /* ListCollectionViewCell.swift in Sources */,
 				6E5D34E524740C0200F30C27 /* wordlistTableViewController.swift in Sources */,
 				6E5D34E324740B9E00F30C27 /* WordTableViewCell.swift in Sources */,
 				6E50B0E7246FE97A00D133D9 /* AppDelegate.swift in Sources */,
 				6E5D34DF2472B8A400F30C27 /* addViewController.swift in Sources */,
 				6E50B0E9246FE97A00D133D9 /* SceneDelegate.swift in Sources */,
+				6EEDAF5C24822CF8009FAD21 /* Add.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +524,6 @@
 		};
 		6E50B10E246FE97F00D133D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E7EBFA2018236E39778D8A6 /* Pods-Secret.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -599,7 +545,6 @@
 		};
 		6E50B10F246FE97F00D133D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11598AEA8F4CFB82478F88C7 /* Pods-Secret.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -621,7 +566,6 @@
 		};
 		6E50B111246FE97F00D133D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD60DA04820F85FCF89F967C /* Pods-SecretTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -643,7 +587,6 @@
 		};
 		6E50B112246FE97F00D133D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D4E15D54CCEE790DECFF632 /* Pods-SecretTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -665,7 +608,6 @@
 		};
 		6E50B114246FE97F00D133D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9522144D6FB7F44A9B9490F /* Pods-Secret-SecretUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -685,7 +627,6 @@
 		};
 		6E50B115246FE97F00D133D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 900F013675A731DD3A396C77 /* Pods-Secret-SecretUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -743,6 +684,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6EEDAF512481FD1A009FAD21 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6EEDAF522481FD1A009FAD21 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EEDAF512481FD1A009FAD21 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		6EEDAF542481FD1A009FAD21 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EEDAF512481FD1A009FAD21 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E50B0DB246FE97A00D133D9 /* Project object */;
 }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-var addpage = [String]()
+import RealmSwift
 
 class addViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
@@ -16,15 +16,10 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
     @IBOutlet var MemoTextField: UITextField!
     @IBOutlet var photoImage: UIImageView!
     
-    var wordArray: [Dictionary<String, String>] = []
-       
-    let saveData = UserDefaults.standard
-
+let realm = try! Realm()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if saveData.array(forKey: "WORD") != nil {
-            wordArray = saveData.array(forKey: "WORD") as! [Dictionary<String, String>]
-        }
         // Do any additional setup after loading the view.
     }
     
@@ -51,20 +46,17 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
     }
     
    @IBAction func saveWord() {
-       let wordDictionary = ["Name": NameTextField.text!, "Price": PriceTextField.text!, "Memo": MemoTextField.text!]
-       
-       wordArray.append(wordDictionary)
-       saveData.set(wordArray, forKey: "WORD")
-       
-       let alert = UIAlertController(title: "保存完了", message: "欲しいものの登録が完了しました", preferredStyle: .alert)
-       alert.addAction(UIAlertAction(
-           title: "OK", style: .default, handler: nil))
-       
-       present(alert, animated: true, completion: nil)
-       
-       NameTextField.text = ""
-       PriceTextField.text = ""
-       MemoTextField.text = ""
+    let newAdd = Add()
+    newAdd.name = NameTextField.text!
+    newAdd.memo = MemoTextField.text!
+    newAdd.price = Int(PriceTextField.text!)!
+
+    
+    try! realm.write{
+        realm.add(newAdd)
+    }
+    dismiss(animated: true, completion: nil)
+    
    }
    
 

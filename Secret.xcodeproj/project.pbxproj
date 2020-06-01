@@ -18,7 +18,7 @@
 		6E50B109246FE97F00D133D9 /* SecretUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B108246FE97F00D133D9 /* SecretUITests.swift */; };
 		6E5D34DD2472B6E500F30C27 /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E5D34DC2472B6E500F30C27 /* coffee.jpg */; };
 		6E5D34DF2472B8A400F30C27 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34DE2472B8A400F30C27 /* addViewController.swift */; };
-		6E5D34E324740B9E00F30C27 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E224740B9E00F30C27 /* WordTableViewCell.swift */; };
+		6E5D34E324740B9E00F30C27 /* wordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */; };
 		6E5D34E524740C0200F30C27 /* wordlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */; };
 		6EEDAF532481FD1A009FAD21 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 6EEDAF522481FD1A009FAD21 /* Realm */; };
 		6EEDAF552481FD1A009FAD21 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6EEDAF542481FD1A009FAD21 /* RealmSwift */; };
@@ -60,7 +60,7 @@
 		6E50B10A246FE97F00D133D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E5D34DC2472B6E500F30C27 /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee.jpg; sourceTree = "<group>"; };
 		6E5D34DE2472B8A400F30C27 /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
-		6E5D34E224740B9E00F30C27 /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordTableViewCell.swift; sourceTree = "<group>"; };
 		6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordlistTableViewController.swift; sourceTree = "<group>"; };
 		6EEDAF5B24822CF7009FAD21 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +119,7 @@
 				6E50B0E8246FE97A00D133D9 /* SceneDelegate.swift */,
 				6E50B0EA246FE97A00D133D9 /* ViewController.swift */,
 				6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */,
-				6E5D34E224740B9E00F30C27 /* WordTableViewCell.swift */,
+				6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */,
 				6E5D34DE2472B8A400F30C27 /* addViewController.swift */,
 				6EEDAF5B24822CF7009FAD21 /* Add.swift */,
 				6E50B0EC246FE97A00D133D9 /* Main.storyboard */,
@@ -349,7 +349,7 @@
 			files = (
 				6E50B0EB246FE97A00D133D9 /* ViewController.swift in Sources */,
 				6E5D34E524740C0200F30C27 /* wordlistTableViewController.swift in Sources */,
-				6E5D34E324740B9E00F30C27 /* WordTableViewCell.swift in Sources */,
+				6E5D34E324740B9E00F30C27 /* wordTableViewCell.swift in Sources */,
 				6E50B0E7246FE97A00D133D9 /* AppDelegate.swift in Sources */,
 				6E5D34DF2472B8A400F30C27 /* addViewController.swift in Sources */,
 				6E50B0E9246FE97A00D133D9 /* SceneDelegate.swift in Sources */,

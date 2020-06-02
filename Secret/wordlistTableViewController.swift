@@ -14,11 +14,7 @@ class wordlistTableViewController: UITableViewController {
     let realm = try! Realm()
     let add = try!Realm().objects(Add.self).sorted(byKeyPath: "name")
     var notificationToken: NotificationToken?
-        
-    let image = UIImage()
-    let pngImage = pngData.toImage()
-    let pngData = image.toPNGData()
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,18 +25,7 @@ class wordlistTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
-    public func extensionData() {
-        //データをイメージに変換
-        func toImage() -> UIImage {
-            guard let image = UIImage(data: pngImage) else {
-                print("データをイメージに変換できませんでした")
-                return UIImage()
-            }
-            return image
-        }
-    }
-    
+        
 
     // MARK: - Table view data source
 
@@ -60,7 +45,7 @@ class wordlistTableViewController: UITableViewController {
        cell.NameLabel.text = add[indexPath.row].name
        cell.MemoLabel.text = add[indexPath.row].memo
        cell.PriceLabel.text = String(add[indexPath.row].price)
-       cell.photoImage.image = add[indexPath.row].
+       cell.photoImage.image = UIImage(data: add[indexPath.row].imageData)
     
        return cell
    }
@@ -125,3 +110,19 @@ class wordlistTableViewController: UITableViewController {
     */
 
 }
+ 
+extension Data {
+     //データをイメージに変換
+     func toImage() -> UIImage {
+         let image = UIImage()
+         let pngData = image.toPNGData()
+         let pngImage = pngData.toImage()
+        
+        guard UIImage(data: self) != nil else {
+             print("データをイメージに変換できませんでした")
+             return UIImage()
+         }
+         return image
+     }
+ }
+

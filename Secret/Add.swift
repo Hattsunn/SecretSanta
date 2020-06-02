@@ -19,7 +19,7 @@ class Add: Object{
     @objc dynamic var name: String = ""
     @objc dynamic var memo: String = ""
     @objc dynamic var price: Int = 0
-    @objc dynamic var imageData: Data? = nil
+    @objc dynamic var imageData = Data()
     
    
 

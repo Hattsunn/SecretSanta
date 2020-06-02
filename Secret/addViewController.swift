@@ -51,26 +51,14 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
         photoImage.image = info[.originalImage] as? UIImage
     }
     
-    //UIImage拡張
-    public func extensionUIImage() {
-        //イメージをpngに変換する
-       func toPNGData() -> Data {
-        guard let data = image.pngData() else {
-                    print("イメージをPNGデータに変換できませんでした")
-                    return Data()
-                }
-                return data
-            }
-        }
-    
-    
+
     //文字、写真のデータを保存する
    @IBAction func saveWord() {
     let newAdd = Add()
     newAdd.name = NameTextField.text!
     newAdd.memo = MemoTextField.text!
     newAdd.price = Int(PriceTextField.text!)!
-    newAdd.image = image.pngData()!
+    newAdd.imageData = image.pngData()!
 
     
     try! realm.write{
@@ -93,3 +81,17 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
     */
 
 }
+
+//UIImage拡張
+   extension UIImage {
+       //イメージをpngに変換する
+       func toPNGData() -> Data {
+       guard let data = self.pngData() else {
+           print("イメージをPNGデータに変換できませんでした")
+           return Data()
+               }
+               return data
+           }
+       }
+   
+   

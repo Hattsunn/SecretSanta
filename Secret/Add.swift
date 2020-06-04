@@ -13,7 +13,7 @@ class Add: Object{
     
     static let realm = try! Realm()
     
-    dynamic private var id = 0 //プライマリーキーの設定
+    @objc dynamic private var id = 0 //プライマリーキーの設定
     
     //realmのなかに何を保存するか
     @objc dynamic var name: String = ""

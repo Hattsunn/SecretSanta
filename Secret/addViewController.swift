@@ -17,7 +17,7 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
     @IBOutlet var photoImage: UIImageView!
     
     let realm = try! Realm()
-    let image = UIImage(named: "sample")!
+    let image = UIImage(named: "sample")
     
     
     override func viewDidLoad() {
@@ -58,7 +58,7 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
     newAdd.name = NameTextField.text!
     newAdd.memo = MemoTextField.text!
     newAdd.price = Int(PriceTextField.text!)!
-    newAdd.imageData = image.pngData()!
+    newAdd.imageData = image?.pngData()! as! Data 
 
     
     try! realm.write{
@@ -67,8 +67,14 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
     dismiss(animated: true, completion: nil)
     
    }
-   
-
+    @IBAction func closenametextfield(_ sender: Any) {
+    }
+    @IBAction func closepricetextfield(_ sender: Any) {
+    }
+    
+    @IBAction func closememotextfield(_ sender: Any) {
+    }
+    
 
     /*
     // MARK: - Navigation

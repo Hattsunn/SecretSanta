@@ -14,6 +14,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     let photos = ["My List1", "My List2", "My List3", "My List4", "My List5", "My List6", "My List7", "My List8", "My List9", "My List10"]
 
+   
+    
    override func viewDidLoad() {
           super.viewDidLoad()
           // Do any additional setup after loading the view.
@@ -57,8 +59,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
           let cellSize : CGFloat = self.view.bounds.width / 2 - horizontalSpace
           return CGSize(width: cellSize, height: cellSize)
       }
+    
+  
+   
+    }
+    
 
-
+        
       /*
       // MARK: - Navigation
 
@@ -70,4 +77,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
       */
     
     
-}
+
+
+
+

@@ -20,7 +20,6 @@ class Add: Object{
     @objc dynamic var memo: String = ""
     @objc dynamic var price: Int = 0
     @objc dynamic var imageData = Data()
-    
    
 
     //primarykeyの設定、キーを設定して、特定のものを取り出す
@@ -35,7 +34,18 @@ class Add: Object{
         return add
     }
     
-    //Id設定
+   
+    //loadAllは保存されているものを全て取ってきて配列にする
+    static func loadAll() -> [Add] {
+        let adds = realm.objects(Add.self).sorted(byKeyPath: "id", ascending: false)
+        var ret: [Add] = []
+        for add in adds {
+            ret.append(add)
+    }
+        return ret
+    }
+    
+    //Id設定、まだrealmsに存在しないidを作る
     static func lastId() -> Int {
         if let add = realm.objects(Add.self).last {
             return add.id + 1

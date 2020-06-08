@@ -12,9 +12,10 @@ import RealmSwift
 class wordlistTableViewController: UITableViewController {
 
     let realm = try! Realm()
-    let add = try!Realm().objects(Add.self).sorted(byKeyPath: "name")
+    var add = try!Realm().objects(Add.self).sorted(byKeyPath: "name")
     var notificationToken: NotificationToken?
-   
+    
+    var receivephotoname: String = "My List1"
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +25,10 @@ class wordlistTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        //navigationItemに名前を入れる
+        self.navigationItem.title = receivephotoname
+    
     }
         
 
@@ -33,27 +38,32 @@ class wordlistTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+//テーブルビュー上のセルの数
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return add.count
     }
     
+//テーブルビューセルにrealm内のデータを表示させる
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! WordTableViewCell
        
+         var adds = Add.loadAll() //addsをrealmに保存されている全データを並べたものにする
+        
        cell.NameLabel.text = add[indexPath.row].name
        cell.MemoLabel.text = add[indexPath.row].memo
        cell.PriceLabel.text = String(add[indexPath.row].price)
        cell.photoImage.image = UIImage(data: add[indexPath.row].imageData)
+    //実際のセル上に表示
     
+        print(Add.loadAll())
        return cell
    }
     
     @IBAction func BackButton() {
         dismiss(animated: true, completion: nil)
     }
-
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

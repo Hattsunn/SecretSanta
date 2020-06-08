@@ -60,4 +60,7 @@ class Add: Object{
                Add.realm.add(self)
            }
 }
+    func deleate(){
+        
+    }
 }

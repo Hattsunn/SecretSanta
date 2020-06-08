@@ -15,7 +15,7 @@ class wordlistTableViewController: UITableViewController {
     var add = try!Realm().objects(Add.self).sorted(byKeyPath: "name")
     var notificationToken: NotificationToken?
     
-    var receivephotoname: String = "My List1"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,9 +26,6 @@ class wordlistTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        //navigationItemに名前を入れる
-        self.navigationItem.title = receivephotoname
-    
     }
         
 
@@ -59,6 +56,26 @@ class wordlistTableViewController: UITableViewController {
         print(Add.loadAll())
        return cell
    }
+    
+    //セルの消去
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            do{
+                let realm = try! Realm()
+                try! realm.write{
+                    realm.delete(add[indexPath.row])
+                }
+               
+                
+                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
+            }
+    }
+}
     
     @IBAction func BackButton() {
         dismiss(animated: true, completion: nil)

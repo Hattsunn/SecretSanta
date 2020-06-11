@@ -32,6 +32,7 @@
 		6E5D34DF2472B8A400F30C27 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34DE2472B8A400F30C27 /* addViewController.swift */; };
 		6E5D34E324740B9E00F30C27 /* wordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */; };
 		6E5D34E524740C0200F30C27 /* wordlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */; };
+		6E7EA8E82491B31A00AF605E /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EA8E72491B31A00AF605E /* NextViewController.swift */; };
 		6EEDAF532481FD1A009FAD21 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 6EEDAF522481FD1A009FAD21 /* Realm */; };
 		6EEDAF552481FD1A009FAD21 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6EEDAF542481FD1A009FAD21 /* RealmSwift */; };
 		6EEDAF5C24822CF8009FAD21 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDAF5B24822CF7009FAD21 /* Add.swift */; };
@@ -86,6 +87,7 @@
 		6E5D34DE2472B8A400F30C27 /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 		6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordTableViewCell.swift; sourceTree = "<group>"; };
 		6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordlistTableViewController.swift; sourceTree = "<group>"; };
+		6E7EA8E72491B31A00AF605E /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		6EEDAF5B24822CF7009FAD21 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 				6E306C50248A189000330083 /* ViewControllerCollectionViewCell.swift */,
 				6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */,
 				6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */,
+				6E7EA8E72491B31A00AF605E /* NextViewController.swift */,
 				6E5D34DE2472B8A400F30C27 /* addViewController.swift */,
 				6EEDAF5B24822CF7009FAD21 /* Add.swift */,
 				6E50B0EC246FE97A00D133D9 /* Main.storyboard */,
@@ -401,6 +404,7 @@
 				6E5D34DF2472B8A400F30C27 /* addViewController.swift in Sources */,
 				6E50B0E9246FE97A00D133D9 /* SceneDelegate.swift in Sources */,
 				6EEDAF5C24822CF8009FAD21 /* Add.swift in Sources */,
+				6E7EA8E82491B31A00AF605E /* NextViewController.swift in Sources */,
 				6E306C51248A189000330083 /* ViewControllerCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -76,6 +76,21 @@ class wordlistTableViewController: UITableViewController {
             }
     }
 }
+
+    var addsword: Add! //NextViewControllerに値を渡す
+    //詳細画面への遷移
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueidentifier" {
+    
+            let nextView = segue.destination as? NextViewController
+            
+            nextView?.addsNextView = addsword
+        }
+    }
+    
+   
+    
+    
     
     @IBAction func BackButton() {
         dismiss(animated: true, completion: nil)

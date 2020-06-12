@@ -20,10 +20,12 @@ class NextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        photoImage.image = UIImage(named: addsNextView.imageData)
+        
         NameLabel.text = addsNextView.name
-        PriceLabel.text = Sring(addsNextView.price)
+        PriceLabel.text = String(addsNextView.price)
         MemoLabel.text = addsNextView.memo
+        photoImage.image = UIImage(data: addsNextView.imageData)
+        
         // Do any additional setup after loading the view.
     }
     

@@ -91,24 +91,18 @@ class wordlistTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(indexPath.row)番目の行が選択されました。")
         
-        addsword = Add(value: add[indexPath.row].name)
-        addsword = Add(value: add[indexPath.row].memo)
-        addsword = Add(value: String(add[indexPath.row].price))
-        addsword = Add(value: UIImage(data: add[indexPath.row].imageData))
+        addsword = add[indexPath.row]
         
-        print(addsword)
+            print(addsword)
        
-        //セルの選択を解除
-        tableView.deselectRow(at: indexPath, animated: true)
-        //別の画面に遷移
-        performSegue(withIdentifier: "segueidentifier", sender: nil)
+      //セルの選択を解除
+      tableView.deselectRow(at: indexPath, animated: true)
+      //別の画面に遷移
+      performSegue(withIdentifier: "segueidentifier", sender: nil)
     }
     
     
     
-    @IBAction func BackButton() {
-        dismiss(animated: true, completion: nil)
-    }
     
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

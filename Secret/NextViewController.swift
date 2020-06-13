@@ -20,6 +20,7 @@ class NextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //それぞれのラベル、イメージに値をいれる
         
         NameLabel.text = addsNextView.name
         PriceLabel.text = String(addsNextView.price)
@@ -29,11 +30,20 @@ class NextViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func BackButton() {
-        dismiss(animated: true, completion: nil)
+    //SNSでシェアできるように
+    @IBAction func onTappedUploadButton() {
+        if photoImage.image != nil {
+            //共有アイテムを設定
+            let activeVC = UIActivityViewController(activityItems: [photoImage.image!], applicationActivities: nil)
+            self.present(activeVC, animated: true, completion: nil)
+        }else{
+            print("no image")
+        }
     }
-
+    //前の画面に戻る、Navigation Controllerと繋いでいる時は、dismissではなく、popToRootViewControllerをつかう
+    @IBAction func  BackButton(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

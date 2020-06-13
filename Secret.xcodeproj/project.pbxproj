@@ -7,28 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E306C462488930A00330083 /* My List3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C3C2488930900330083 /* My List3.png */; };
-		6E306C472488930A00330083 /* My List4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C3D2488930900330083 /* My List4.png */; };
-		6E306C482488930A00330083 /* My List2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C3E2488930900330083 /* My List2.png */; };
-		6E306C492488930A00330083 /* My List6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C3F2488930900330083 /* My List6.png */; };
-		6E306C4A2488930A00330083 /* My List9.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C402488930900330083 /* My List9.png */; };
-		6E306C4B2488930A00330083 /* My List8.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C412488930900330083 /* My List8.png */; };
-		6E306C4C2488930A00330083 /* My List1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C422488930A00330083 /* My List1.png */; };
-		6E306C4D2488930A00330083 /* My List7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C432488930A00330083 /* My List7.png */; };
-		6E306C4E2488930A00330083 /* My List5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C442488930A00330083 /* My List5.png */; };
-		6E306C4F2488930A00330083 /* My List10.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C452488930A00330083 /* My List10.png */; };
-		6E306C51248A189000330083 /* ViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E306C50248A189000330083 /* ViewControllerCollectionViewCell.swift */; };
-		6E306C53248A257800330083 /* rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E306C52248A257800330083 /* rectangle.png */; };
 		6E3BE6EF24791CED00A13D09 /* プレゼント１.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E3BE6EE24791CED00A13D09 /* プレゼント１.PNG */; };
 		6E50B0E7246FE97A00D133D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B0E6246FE97A00D133D9 /* AppDelegate.swift */; };
 		6E50B0E9246FE97A00D133D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B0E8246FE97A00D133D9 /* SceneDelegate.swift */; };
-		6E50B0EB246FE97A00D133D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B0EA246FE97A00D133D9 /* ViewController.swift */; };
 		6E50B0EE246FE97A00D133D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E50B0EC246FE97A00D133D9 /* Main.storyboard */; };
 		6E50B0F0246FE97E00D133D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E50B0EF246FE97E00D133D9 /* Assets.xcassets */; };
 		6E50B0F3246FE97E00D133D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E50B0F1246FE97E00D133D9 /* LaunchScreen.storyboard */; };
 		6E50B0FE246FE97F00D133D9 /* SecretTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B0FD246FE97F00D133D9 /* SecretTests.swift */; };
 		6E50B109246FE97F00D133D9 /* SecretUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B108246FE97F00D133D9 /* SecretUITests.swift */; };
-		6E5D34DD2472B6E500F30C27 /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E5D34DC2472B6E500F30C27 /* coffee.jpg */; };
 		6E5D34DF2472B8A400F30C27 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34DE2472B8A400F30C27 /* addViewController.swift */; };
 		6E5D34E324740B9E00F30C27 /* wordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */; };
 		6E5D34E524740C0200F30C27 /* wordlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */; };
@@ -57,23 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E306C3C2488930900330083 /* My List3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My List3.png"; sourceTree = "<group>"; };
-		6E306C3D2488930900330083 /* My List4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My List4.png"; sourceTree = "<group>"; };
-		6E306C3E2488930900330083 /* My List2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My List2.png"; sourceTree = "<group>"; };
-		6E306C3F2488930900330083 /* My List6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My List6.png"; sourceTree = "<group>"; };
-		6E306C402488930900330083 /* My List9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My List9.png"; sourceTree = "<group>"; };
-		6E306C412488930900330083 /* My List8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My List8.png"; sourceTree = "<group>"; };
-		6E306C422488930A00330083 /* My List1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My List1.png"; sourceTree = "<group>"; };
-		6E306C432488930A00330083 /* My List7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My List7.png"; sourceTree = "<group>"; };
-		6E306C442488930A00330083 /* My List5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My List5.png"; sourceTree = "<group>"; };
-		6E306C452488930A00330083 /* My List10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My List10.png"; sourceTree = "<group>"; };
-		6E306C50248A189000330083 /* ViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
-		6E306C52248A257800330083 /* rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.png; sourceTree = "<group>"; };
 		6E3BE6EE24791CED00A13D09 /* プレゼント１.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "プレゼント１.PNG"; sourceTree = "<group>"; };
 		6E50B0E3246FE97A00D133D9 /* SecretSanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E50B0E6246FE97A00D133D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E50B0E8246FE97A00D133D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6E50B0EA246FE97A00D133D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E50B0ED246FE97A00D133D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E50B0EF246FE97E00D133D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E50B0F2246FE97E00D133D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,7 +57,6 @@
 		6E50B104246FE97F00D133D9 /* SecretUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E50B108246FE97F00D133D9 /* SecretUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretUITests.swift; sourceTree = "<group>"; };
 		6E50B10A246FE97F00D133D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E5D34DC2472B6E500F30C27 /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee.jpg; sourceTree = "<group>"; };
 		6E5D34DE2472B8A400F30C27 /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 		6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordTableViewCell.swift; sourceTree = "<group>"; };
 		6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordlistTableViewController.swift; sourceTree = "<group>"; };
@@ -143,20 +115,8 @@
 		6E50B0E5246FE97A00D133D9 /* Secret */ = {
 			isa = PBXGroup;
 			children = (
-				6E306C422488930A00330083 /* My List1.png */,
-				6E306C3E2488930900330083 /* My List2.png */,
-				6E306C3C2488930900330083 /* My List3.png */,
-				6E306C3D2488930900330083 /* My List4.png */,
-				6E306C442488930A00330083 /* My List5.png */,
-				6E306C3F2488930900330083 /* My List6.png */,
-				6E306C432488930A00330083 /* My List7.png */,
-				6E306C412488930900330083 /* My List8.png */,
-				6E306C402488930900330083 /* My List9.png */,
-				6E306C452488930A00330083 /* My List10.png */,
 				6E50B0E6246FE97A00D133D9 /* AppDelegate.swift */,
 				6E50B0E8246FE97A00D133D9 /* SceneDelegate.swift */,
-				6E50B0EA246FE97A00D133D9 /* ViewController.swift */,
-				6E306C50248A189000330083 /* ViewControllerCollectionViewCell.swift */,
 				6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */,
 				6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */,
 				6E7EA8E72491B31A00AF605E /* NextViewController.swift */,
@@ -168,8 +128,6 @@
 				6EE503812478CF3900839D6E /* AppIcon.appiconset */,
 				6E50B0F1246FE97E00D133D9 /* LaunchScreen.storyboard */,
 				6E98FC1724946F5A00572E2F /* secret santa donyu green.png */,
-				6E306C52248A257800330083 /* rectangle.png */,
-				6E5D34DC2472B6E500F30C27 /* coffee.jpg */,
 				6E50B0F4246FE97F00D133D9 /* Info.plist */,
 			);
 			path = Secret;
@@ -314,20 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E50B0F3246FE97E00D133D9 /* LaunchScreen.storyboard in Resources */,
-				6E306C492488930A00330083 /* My List6.png in Resources */,
-				6E306C472488930A00330083 /* My List4.png in Resources */,
 				6E3BE6EF24791CED00A13D09 /* プレゼント１.PNG in Resources */,
-				6E306C4E2488930A00330083 /* My List5.png in Resources */,
-				6E306C53248A257800330083 /* rectangle.png in Resources */,
-				6E306C4A2488930A00330083 /* My List9.png in Resources */,
-				6E306C482488930A00330083 /* My List2.png in Resources */,
-				6E5D34DD2472B6E500F30C27 /* coffee.jpg in Resources */,
-				6E306C4D2488930A00330083 /* My List7.png in Resources */,
 				6E50B0F0246FE97E00D133D9 /* Assets.xcassets in Resources */,
-				6E306C462488930A00330083 /* My List3.png in Resources */,
-				6E306C4B2488930A00330083 /* My List8.png in Resources */,
-				6E306C4F2488930A00330083 /* My List10.png in Resources */,
-				6E306C4C2488930A00330083 /* My List1.png in Resources */,
 				6E98FC1824946F5A00572E2F /* secret santa donyu green.png in Resources */,
 				6E50B0EE246FE97A00D133D9 /* Main.storyboard in Resources */,
 			);
@@ -401,7 +347,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E50B0EB246FE97A00D133D9 /* ViewController.swift in Sources */,
 				6E5D34E524740C0200F30C27 /* wordlistTableViewController.swift in Sources */,
 				6E5D34E324740B9E00F30C27 /* wordTableViewCell.swift in Sources */,
 				6E50B0E7246FE97A00D133D9 /* AppDelegate.swift in Sources */,
@@ -409,7 +354,6 @@
 				6E50B0E9246FE97A00D133D9 /* SceneDelegate.swift in Sources */,
 				6EEDAF5C24822CF8009FAD21 /* Add.swift in Sources */,
 				6E7EA8E82491B31A00AF605E /* NextViewController.swift in Sources */,
-				6E306C51248A189000330083 /* ViewControllerCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,8 @@ class NextViewController: UIViewController {
     @IBOutlet weak var PriceLabel: UILabel!
     @IBOutlet weak var MemoLabel: UILabel!
     @IBOutlet weak var photoImage: UIImageView!
-
+   
+    
     var addsNextView: Add!
     
     override func viewDidLoad() {
@@ -28,6 +29,8 @@ class NextViewController: UIViewController {
         photoImage.image = UIImage(data: addsNextView.imageData)
         
         // Do any additional setup after loading the view.
+        
+       
     }
     
     //SNSでシェアできるように

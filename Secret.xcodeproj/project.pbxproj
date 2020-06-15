@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E3BE6EF24791CED00A13D09 /* プレゼント１.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E3BE6EE24791CED00A13D09 /* プレゼント１.PNG */; };
 		6E50B0E7246FE97A00D133D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B0E6246FE97A00D133D9 /* AppDelegate.swift */; };
 		6E50B0E9246FE97A00D133D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50B0E8246FE97A00D133D9 /* SceneDelegate.swift */; };
 		6E50B0EE246FE97A00D133D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E50B0EC246FE97A00D133D9 /* Main.storyboard */; };
@@ -43,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E3BE6EE24791CED00A13D09 /* プレゼント１.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "プレゼント１.PNG"; sourceTree = "<group>"; };
 		6E50B0E3246FE97A00D133D9 /* SecretSanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E50B0E6246FE97A00D133D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E50B0E8246FE97A00D133D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				6E5D34DE2472B8A400F30C27 /* addViewController.swift */,
 				6EEDAF5B24822CF7009FAD21 /* Add.swift */,
 				6E50B0EC246FE97A00D133D9 /* Main.storyboard */,
-				6E3BE6EE24791CED00A13D09 /* プレゼント１.PNG */,
 				6E50B0EF246FE97E00D133D9 /* Assets.xcassets */,
 				6EE503812478CF3900839D6E /* AppIcon.appiconset */,
 				6E50B0F1246FE97E00D133D9 /* LaunchScreen.storyboard */,
@@ -272,7 +269,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E50B0F3246FE97E00D133D9 /* LaunchScreen.storyboard in Resources */,
-				6E3BE6EF24791CED00A13D09 /* プレゼント１.PNG in Resources */,
 				6E50B0F0246FE97E00D133D9 /* Assets.xcassets in Resources */,
 				6E98FC1824946F5A00572E2F /* secret santa donyu green.png in Resources */,
 				6E50B0EE246FE97A00D133D9 /* Main.storyboard in Resources */,
@@ -528,7 +524,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.5;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = Secret/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -549,7 +545,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.5;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = Secret/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

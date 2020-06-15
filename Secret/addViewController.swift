@@ -15,16 +15,21 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
     @IBOutlet var PriceTextField: UITextField!
     @IBOutlet var MemoTextField: UITextField!
     @IBOutlet var photoImage: UIImageView!
-    
+    @IBOutlet var mylabel: UILabel!
     let realm = try! Realm() //レルム宣言
     var image = UIImage()
     
     var alertController: UIAlertController! //アラートを出すための宣言
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //写真を入れるところの枠表示、UIColorとかを使うときは、labelに関連づけを忘れない、viewDidLoadの中に書く
+        self.mylabel.layer.borderWidth = 2.0
+        self.mylabel.layer.borderColor = UIColor.red.cgColor
     }
     func alert(title:String, message:String) {
         alertController = UIAlertController(title: title,

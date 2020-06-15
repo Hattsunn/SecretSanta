@@ -37,7 +37,7 @@ class NextViewController: UIViewController {
     @IBAction func onTappedUploadButton() {
         if photoImage.image != nil {
             //共有アイテムを設定
-            let activeVC = UIActivityViewController(activityItems: [photoImage.image!], applicationActivities: nil)
+            let activeVC = UIActivityViewController(activityItems: [photoImage.image!, NameLabel.text!], applicationActivities: nil)
             self.present(activeVC, animated: true, completion: nil)
         }else{
             print("no image")

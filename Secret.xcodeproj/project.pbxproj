@@ -18,7 +18,7 @@
 		6E5D34E324740B9E00F30C27 /* wordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */; };
 		6E5D34E524740C0200F30C27 /* wordlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */; };
 		6E7EA8E82491B31A00AF605E /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EA8E72491B31A00AF605E /* NextViewController.swift */; };
-		6E98FC1824946F5A00572E2F /* secret santa donyu green.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E98FC1724946F5A00572E2F /* secret santa donyu green.png */; };
+		6E98FC1A249776B300572E2F /* secret santa red & green donyu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E98FC19249776B300572E2F /* secret santa red & green donyu.png */; };
 		6EEDAF532481FD1A009FAD21 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 6EEDAF522481FD1A009FAD21 /* Realm */; };
 		6EEDAF552481FD1A009FAD21 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6EEDAF542481FD1A009FAD21 /* RealmSwift */; };
 		6EEDAF5C24822CF8009FAD21 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDAF5B24822CF7009FAD21 /* Add.swift */; };
@@ -59,7 +59,7 @@
 		6E5D34E224740B9E00F30C27 /* wordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordTableViewCell.swift; sourceTree = "<group>"; };
 		6E5D34E424740C0200F30C27 /* wordlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordlistTableViewController.swift; sourceTree = "<group>"; };
 		6E7EA8E72491B31A00AF605E /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
-		6E98FC1724946F5A00572E2F /* secret santa donyu green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secret santa donyu green.png"; sourceTree = "<group>"; };
+		6E98FC19249776B300572E2F /* secret santa red & green donyu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secret santa red & green donyu.png"; sourceTree = "<group>"; };
 		6EEDAF5B24822CF7009FAD21 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,7 +124,7 @@
 				6E50B0EF246FE97E00D133D9 /* Assets.xcassets */,
 				6EE503812478CF3900839D6E /* AppIcon.appiconset */,
 				6E50B0F1246FE97E00D133D9 /* LaunchScreen.storyboard */,
-				6E98FC1724946F5A00572E2F /* secret santa donyu green.png */,
+				6E98FC19249776B300572E2F /* secret santa red & green donyu.png */,
 				6E50B0F4246FE97F00D133D9 /* Info.plist */,
 			);
 			path = Secret;
@@ -270,7 +270,7 @@
 			files = (
 				6E50B0F3246FE97E00D133D9 /* LaunchScreen.storyboard in Resources */,
 				6E50B0F0246FE97E00D133D9 /* Assets.xcassets in Resources */,
-				6E98FC1824946F5A00572E2F /* secret santa donyu green.png in Resources */,
+				6E98FC1A249776B300572E2F /* secret santa red & green donyu.png in Resources */,
 				6E50B0EE246FE97A00D133D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

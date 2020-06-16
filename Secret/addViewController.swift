@@ -11,6 +11,7 @@ import RealmSwift
 
 class addViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    
     @IBOutlet var NameTextField: UITextField!
     @IBOutlet var PriceTextField: UITextField!
     @IBOutlet var MemoTextField: UITextField!
@@ -95,6 +96,7 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
                 realm.add(newAdd)
             }
             print("Data Saved")
+            
             self.navigationController?.popToRootViewController(animated: true) //画面もどる
             
         }

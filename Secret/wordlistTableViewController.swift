@@ -9,10 +9,10 @@
 import UIKit
 import RealmSwift
 
-class wordlistTableViewController: UITableViewController {
+class wordlistTableViewController: UITableViewController{
 
     let realm = try! Realm()
-    var add = try!Realm().objects(Add.self).sorted(byKeyPath: "name")
+    let add = try!Realm().objects(Add.self).sorted(byKeyPath: "name")
     var notificationToken: NotificationToken?
     
     
@@ -26,6 +26,10 @@ class wordlistTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+        //realmの中に新しいデータが入っていたときにセルに反映されるように
+        notificationToken = add.observe{[weak self]_ in
+            self?.tableView.reloadData()
+        }
     }
         
 
@@ -54,6 +58,7 @@ class wordlistTableViewController: UITableViewController {
     //実際のセル上に表示
     
         print(Add.loadAll())
+        
        return cell
    }
     

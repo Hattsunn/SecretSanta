@@ -86,7 +86,7 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
             newAdd.name = NameTextField.text!
             newAdd.memo = MemoTextField.text!
             newAdd.price = Int(PriceTextField.text!)!
-            newAdd.imageData = (image.pngData())!
+            newAdd.imageData = image.pngData()!
             
             newAdd.save()//画面上に登録した文字、写真を保存
             
@@ -94,7 +94,8 @@ class addViewController: UIViewController, UINavigationControllerDelegate, UIIma
             try! realm.write{
                 realm.add(newAdd)
             }
-            self.dismiss(animated: true, completion: nil) //画面もどる（このままだとトップ画面に戻ってしまう、navigation controllerの場合は別mの書き方）
+            print("Data Saved")
+            self.navigationController?.popToRootViewController(animated: true) //画面もどる
             
         }
     }
